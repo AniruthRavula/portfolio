@@ -1,0 +1,16 @@
+
+.lan_funfact {
+    border: 1px dashed #b9b9b9;
+    .lan_fun_name {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.bg-funfact {
+    position: relative;
+    background-image: url(../images/img-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+}

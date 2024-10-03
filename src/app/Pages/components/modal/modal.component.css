@@ -1,0 +1,48 @@
+.custom-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.custom-modal-container {
+  background-color: white;
+  height: max-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-modal-header {
+  display: flex;
+  justify-content: space-between; /* Ensures title and button are on opposite sides */
+  align-items: center; /* Vertically centers the title and button */
+ 
+}
+
+.custom-modal-header h5 {
+  margin: 0;
+  flex-grow: 1; /* Ensures title takes up available space */
+ 
+}
+
+.custom-modal-header .btn-close {
+  margin-left: auto; /* Push the button to the right */
+ 
+  border: none;
+ 
+  cursor: pointer;
+}
+
+.custom-modal-body {
+  padding: 1rem;
+ 
+}
+
+.btn-close{
+  color: black;
+}

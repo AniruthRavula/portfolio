@@ -1,0 +1,62 @@
+<section class="section text-center animate-scroll" id="credentials">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="text-center mx-auto section-main-title">
+          <h2> <span class="fw-bold">Credentials</span></h2>
+          <div class="main-title-border">
+            <i class="mdi mdi-asterisk"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-lg-12">
+        <ul class="text-center list-unstyled list-inline mb-0 text-capitalize work_menu" id="menu-filter">
+          <!-- <li class="list-inline-item">
+            <a [class.active]="activeFilter === '*'" (click)="setActiveFilter('*')">All</a>
+          </li> -->
+          <li class="list-inline-item">
+            <a [class.active]="activeFilter === 'seo'"  (click)="setActiveFilter('seo')">Projects</a>
+          </li>
+          <li class="list-inline-item">
+            <a [class.active]="activeFilter === 'webdesign'"  (click)="setActiveFilter('webdesign')">Certifications</a>
+          </li> `
+          <li class="list-inline-item">
+            <a [class.active]="activeFilter === 'work'"  (click)="setActiveFilter('work')">Achievements</a>
+          <!-- </li>
+          <li class="list-inline-item">
+            <a [class.active]="activeFilter === 'wordpress'" (click)="setActiveFilter('wordpress')">Wordpress</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mt-5 work-filter">
+      <div class="col-lg-4" *ngFor="let work of filteredWorks">
+        <div class="work_img_box rounded" [ngClass]="work.categories">
+          <a class="img-zoom img-pointer" href="javascript:void(0)" (click)="handleWorkNavigation(work)"></a>
+
+      <div class="work_images">
+
+            <picture>
+              <source [srcset]="getWebPUrl(work.imageUrl)" loading="lazy"  type="image/webp">
+              <img [src]="work.imageUrl" loading="lazy"  alt="image" class="img-fluid mx-auto d-block"  [ngStyle]="{'padding': work.title === 'Microsoft' ? '40px' : '0',  'padding-top': work.title === 'Microsoft' ? '-100px' : '0',  'width': work.title === 'Microsoft' ? '250px' : '400px',
+              'height': work.title === 'Microsoft' ? '300px' : '300px'}" />
+            </picture>
+            
+            <div class="work_overlay">
+              <h4 *ngIf="!work.categories?.includes('seo')">{{ work.title }}</h4>
+              <h6 *ngIf="!work.categories?.includes('seo')">{{ work.description }}</h6>
+              <h6 *ngIf="work.categories?.includes('seo')">{{ work.title }}</h6>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

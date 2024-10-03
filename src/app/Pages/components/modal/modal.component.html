@@ -1,0 +1,47 @@
+
+<!-- <div class="custom-modal-backdrop">
+  <div class="modal-header">
+    <h5 class="modal-title">{{ title }}</h5>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modalRef.close()"></button>
+  </div>
+  <div class="modal-body">
+    <img [src]="imageUrl" alt="{{ title }}" class="img-fluid">
+  </div>
+</div> -->
+  <!-- <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modalRef.close()">Close</button>
+  </div>
+   -->
+
+
+   <div class="custom-modal-backdrop">
+    <div class="modal modal-lg modal-dialog-centered" style="display: block;">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ title }}</h5>
+            <button type="button" class="btn-close" aria-label="Close" (click)="modalRef.close()"></button>
+          </div>
+          <div class="modal-body">
+            <img [src]="imageUrl" alt="{{ title }}" class="img-fluid mx-auto d-block" >
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<!-- <div class="custom-modal-backdrop">
+  <div class="custom-modal-container">
+    <div class="custom-modal-header">
+      <h5 class="modal-title">{{ title }}</h5>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modalRef.close()"></button>
+    </div>
+    <div class="custom-modal-body modal-lg modal-dialog-centered">
+      <img [src]="imageUrl" alt="{{ title }}" class="img-fluid mx-auto d-block" style="height: 250px;">
+    
+    </div>
+  </div>
+</div> -->

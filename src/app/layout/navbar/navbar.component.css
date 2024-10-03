@@ -1,0 +1,7 @@
+/* Sticky behavior */
+.stickyadd {
+    background-color: #fff; /* Example: make navbar background white when sticky */
+    box-shadow: 0 4px 2px -2px gray;
+    transition: background-color 0.3s ease;
+  }
+  

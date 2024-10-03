@@ -1,0 +1,11 @@
+
+.logo_img {
+    img {
+        max-height: 100px;
+        width: auto !important;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

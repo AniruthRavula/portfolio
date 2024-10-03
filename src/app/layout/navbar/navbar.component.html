@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg fixed-top custom-nav sticky" #navbar>
+  <div class="container">
+    <!-- LOGO -->
+    <a class="navbar-brand logo" href="index.html">
+      <img src="assets/images/logo1.png" alt="" class="img-fluid logo-light">
+      <img src="assets/images/logo1-dark.png" alt="" class="img-fluid logo-dark">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="mdi mdi-menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" *ngFor="let item of navItems" [class.active]="activeSection === item.id">
+          <a [href]="item.href" class="nav-link"  (click)="setActiveSection(item.id)">{{ item.label }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

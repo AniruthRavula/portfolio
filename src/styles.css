@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+.indexs-banner{
+  margin-left: 50px;
+  margin-top: 25%;
+}
+@media (max-width:557px) {
+  .indexs-banner{
+  margin-left: 0px;
+  margin-top: 85%;
+  }
+}
+
+.swiper-sliders {
+  background-image: url('/assets/images/home-bg-6.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh; /* Adjust as needed for your layout */
+  position: relative;
+}
+.btn.hover-light:hover {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+/* .hover-box {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.hover-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.hover-box {
+  position: relative;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hover-box:hover {
+  transform: translateY(-10px); /* Slight lift effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 0 15px rgba(66, 135, 245, 0.5); /* Shadow + glow effect */
+  border: 2px solid rgba(66, 135, 245, 0.7); /* Glowing border */
+}
+
+.cv_edu_exp_box h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.cb_edu_exp_detail p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.three-D {
+  transform:
+    perspective(750px)
+    translate3d(0px, 0px, -250px)
+    rotateX(27deg)
+    scale(0.9, 0.9);
+  border-radius: 20px;
+  border: 3px solid #555;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out transform;
+  margin-right: -20px;
+  margin-left: -20px;
+
+  &:hover {
+    transform:
+     translate3d(0px, 0px, -250px)
+      scale(0.8, 0.8);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* @keyframes appear {
+  from {
+    opacity: 0;
+    scale :0.5;
+  }
+  to {
+    opacity: 1;
+    scale : 1;
+  }
+}
+
+.animate-scroll {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 0%;
+} */
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 75% 75%);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-scroll  {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 28%;
+}

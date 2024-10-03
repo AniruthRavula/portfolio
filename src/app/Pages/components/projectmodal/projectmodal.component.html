@@ -1,0 +1,52 @@
+<!-- <div class="custom-modal-backdrop">
+  <div class="modal-header">
+    <h5 class="modal-title">{{ title }}</h5>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modalRef.close()"></button>
+  </div>
+  <div class="modal-body">
+    <img [src]="imageUrl" alt="{{ title }}" class="img-fluid mx-auto d-block" style="height: 250px; ">
+    <p>{{description}}</p>
+  </div>
+</div> -->
+  <!-- <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modalRef.close()">Close</button>
+  </div>
+   -->
+
+
+
+<div class="custom-modal-backdrop">
+  <div class="custom-modal-container">
+    <div class="custom-modal-header">
+      <h5 class="modal-title">{{ title }}</h5>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modalRef.close()"></button>
+    </div>
+    <div class="custom-modal-body">
+      <img [src]="imageUrl" alt="{{ title }}" class="img-fluid mx-auto d-block" [ngStyle]="{'width': title != 'Sentiment Analysis on IMDB Movie Reviews' ? '250px' : 'auto',
+      'height': title != 'Sentiment Analysis on IMDB Movie Reviews' ? '250px' : 'auto'}"/>
+      <p>{{ description }}</p>
+    
+      <!-- <a *ngIf="title && title.includes('MNIST Digit Classification')">https://www.kaggle.com/code/aniruthravula/resnet-mnist</a> -->
+      <a class= "right"  *ngIf="title && title.includes('MNIST Digit Classification')" href="https://www.kaggle.com/code/aniruthravula/resnet-mnist" target="_blank" rel="noopener noreferrer">
+        <img class="animated-icon" src="assets/images/projects/kaggle.png" alt="Link Icon" style="width: 60px; height: 40px; margin-right: 5px;"> 
+        <!-- Checkout Code here -->
+      </a>
+      
+      <a class= "right"  *ngIf="title && title.includes('CIFAR-10 Image Classification')" href="https://www.kaggle.com/code/aniruthravula/alexnet-cifar10" target="_blank" rel="noopener noreferrer">
+        <img class="animated-icon" src="assets/images/projects/kaggle.png" alt="Link Icon" style="width: 60px; height: 40px; margin-right: 5px;"> 
+        <!-- Checkout Code here -->
+      </a>
+
+      <a class= "right"  *ngIf="title && title.includes('Sentiment Analysis on IMDB Movie Reviews')" href="https://www.kaggle.com/code/aniruthravula/lstm-sentimentclassification" target="_blank" rel="noopener noreferrer">
+        <img class="animated-icon" src="assets/images/projects/kaggle.png" alt="Link Icon" style="width: 60px; height: 40px; margin-right: 5px;"> 
+        <!-- Checkout Code here -->
+      </a>
+    
+      <a class= "right"  *ngIf="title && title.includes('Generating MNIST Handwritten Digits')" href="https://www.kaggle.com/code/aniruthravula/gan-mnist" target="_blank" rel="noopener noreferrer">
+        <img class="animated-icon" src="assets/images/projects/kaggle.png" alt="Link Icon" style="width: 60px; height: 40px; margin-right: 5px;"> 
+        <!-- Checkout Code here -->
+      </a>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,65 @@
+// client scss
+
+.bg-client {
+    position: relative;
+    background-image: url(../images/img-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    .carousel-indicators {
+        margin: -30px;
+        transition: all .3s;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 20px;
+        border-top: 0;
+        border-radius: 14px;
+        border: 1px white;
+        height: 6px;
+    }
+    .carousel-indicators .active {
+        width: 30px;
+        transition: all .3s;
+    }
+}
+
+.people_says {
+    .people_icon {
+        i {
+            font-size: 60px;
+        }
+    }
+}
+
+.people_review_box {
+    .people_review {
+        font-size: 18px;
+        max-width: 580px;
+    }
+}
+
+.owl-theme {
+    .owl-controls {
+        .owl-page {
+            margin: 20px 0px;
+            &.active {
+                span {
+                    width: 20px;
+                }
+            }
+            span {
+                display: block;
+                width: 12px;
+                height: 6px;
+                margin: 5px 4px;
+                filter: Alpha(Opacity=50);
+                opacity: 0.5;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+                transition: all 0.5s;
+                background: #fff;
+            }
+        }
+    }
+}

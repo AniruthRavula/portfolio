@@ -1,0 +1,38 @@
+
+.about-detail {
+    max-width: 850px;
+    .about-work {
+        li {
+            font-size: 18px;
+            font-weight: 600;
+            &::after {
+                content: "";
+                height: 3px;
+                width: 3px;
+                border-radius: 50%;
+                background-color: #757575;
+                margin: 0px 12px;
+                position: relative;
+                display: inline-block;
+                top: -3px;
+            }
+            &:last-child {
+                &:after {
+                    content: "";
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.skill-custom {
+    .progress {
+        height: 4px;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    .progress-bar {
+        background: #000;
+    }
+}

@@ -1,0 +1,57 @@
+
+.cv_edu_exp {
+    padding: 10px 0;
+    position: relative;
+    &::after {
+        content: "";
+        height: 100%;
+        left: 0;
+        background-color: #e7e7e7;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+    }
+    .cv_edu_exp_box {
+        border-radius: 7px;
+        border: 1px solid #e7e7e7;
+        margin-left: 20px;
+        padding: 20px;
+        .cv_edu_exp_year {
+            position: relative;
+            margin: 0 0 10px 15px !important;
+            &::after {
+                border: 3px solid #fff;
+                border-radius: 50%;
+                content: "";
+                height: 20px;
+                background-color: #000;
+                position: absolute;
+                left: -65px !important;
+                width: 20px;
+                z-index: 1;
+            }
+        }
+        .cb_edu_exp_detail {
+            text-align: left;
+            margin-left: 15px;
+            float: left;
+            border-radius: 0;
+        }
+    }
+}
+
+.cv_edu_exp h4,
+.cb_edu_exp_detail h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.cv_desc {
+    line-height: 26px;
+    font-size: 15px;
+    color: #666;
+}
