@@ -132,13 +132,13 @@ export class WorkComponent {
       description: '',
       title: 'Personal Portfolio Angular',
       categories: ['seo']
-    },
-    {
-      imageUrl: 'assets/images/projects/rescue.png',
-      description: '',
-      title: 'Automatic Accident Avoidance and Detection System using LabVIEW',
-      categories: ['seo']
     }
+    // {
+    //   imageUrl: 'assets/images/projects/rescue.png',
+    //   description: '',
+    //   title: 'Automatic Accident Avoidance and Detection System using LabVIEW',
+    //   categories: ['seo']
+    // }
 
   ];
 
